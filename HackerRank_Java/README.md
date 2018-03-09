@@ -16,3 +16,6 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
     
     //execute after Static{} and execute every time you call the class
     initialization blocks       : {}        
+    
+# Static Variables and variables
+动态变量在子程序中，每次调用都会从它的初始值开始调用，而不管他在函数中经历了什么变化；静态变量会从变化后的值继续改变。
