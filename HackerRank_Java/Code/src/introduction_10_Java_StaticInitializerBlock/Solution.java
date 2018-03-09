@@ -18,16 +18,15 @@ public class Solution {
 		in.close();
 		try {
 			if (B <= 0 || H <= 0) {
-				flag = false;
+				flag = false; // alternative option with System.exit(0);
 				throw new Exception("Breadth and height must be positive");
 			}
 		} catch (Exception e) {
 			System.out.println(e);
-			//System.exit(0);
+			// System.exit(0);
 		}
 	}
-	
-	//end my code here
+	// end my code here
 	
 	public static void main(String[] args) {
 		if (flag) {
@@ -38,7 +37,6 @@ public class Solution {
 	}// end of main
 
 }// end of class
-
 
 /**
  * 
