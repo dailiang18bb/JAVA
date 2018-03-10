@@ -38,3 +38,14 @@ https://docs.oracle.com/javase/tutorial/java/javaOO/initial.html
 			//System.exit(0);
 		}
 	}
+
+# Integer to String
+http://javadevnotes.com/java-integer-to-string-examples
+
+	String s = "" + n;
+	String s = Integer.toString(n);
+	String s = String.valueOf(n);
+	String s = new Integer(n).toString();
+	String s = String.format("%d",n);
+	String s = new StringBuffer().append(n).toString();
+	String s = new StringBuilder().append(n).toString();
