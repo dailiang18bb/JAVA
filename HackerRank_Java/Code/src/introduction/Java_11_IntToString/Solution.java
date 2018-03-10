@@ -15,9 +15,14 @@ public class Solution {
 			// String s=???; Complete this line below
 			
 			// Write your code here
-			String s = Integer.toString(n);
 			
-			
+			String s = "" + n;
+		    //String s = Integer.toString(n);
+		    //String s = String.valueOf(n);
+		    //String s = new Integer(n).toString();
+		    //String s = String.format("%d",n);
+		    //String s = new StringBuffer().append(n).toString();
+		    //String s = new StringBuilder().append(n).toString();
 			
 			
 			//end your code here
