@@ -49,3 +49,6 @@ http://javadevnotes.com/java-integer-to-string-examples
 	String s = String.format("%d",n);
 	String s = new StringBuffer().append(n).toString();
 	String s = new StringBuilder().append(n).toString();
+
+# Java Date and Time
+https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html
