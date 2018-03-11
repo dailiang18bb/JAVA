@@ -52,3 +52,9 @@ http://javadevnotes.com/java-integer-to-string-examples
 
 # Java Date and Time
 https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html
+
+	Calendar cal = Calendar.getInstance();
+	cal.set(Integer.parseInt(year), Integer.parseInt(month) - 1, Integer.parseInt(day));
+	int a = cal.get(Calendar.DAY_OF_WEEK);
+	String[] weeks = { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY" };
+	return weeks[a - 1];
