@@ -58,3 +58,16 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Calendar.html
 	int a = cal.get(Calendar.DAY_OF_WEEK);
 	String[] weeks = { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY" };
 	return weeks[a - 1];
+	
+# Java Currency Formatter
+https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html
+https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getCurrencyInstance-java.util.Locale-
+
+	NumberFormat fmUS = NumberFormat.getCurrencyInstance(Locale.US);
+	NumberFormat fmIndia = NumberFormat.getCurrencyInstance(new Locale("en", "IN"));
+	NumberFormat fmChina = NumberFormat.getCurrencyInstance(Locale.CHINA);
+	NumberFormat fmFrance = NumberFormat.getCurrencyInstance(Locale.FRANCE);
+	String us = fmUS.format(payment);
+	String india = fmIndia.format(payment);
+	String china = fmChina.format(payment);
+	String france = fmFrance.format(payment);
