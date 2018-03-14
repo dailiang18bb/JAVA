@@ -71,3 +71,12 @@ https://docs.oracle.com/javase/8/docs/api/java/text/NumberFormat.html#getCurrenc
 	String india = fmIndia.format(payment);
 	String china = fmChina.format(payment);
 	String france = fmFrance.format(payment);
+
+# Java Strings Introduction
+https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
+	
+	System.out.println(A.length() + B.length());
+        System.out.println(A.compareTo(B)>0? "Yes" : "No");
+	System.out.println(A.substring(0, 1).toUpperCase() + A.substring(1) + " " + 
+                           B.substring(0, 1).toUpperCase()+ B.substring(1));
+	
