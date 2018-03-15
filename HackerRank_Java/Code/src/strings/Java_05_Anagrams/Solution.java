@@ -10,10 +10,7 @@ public class Solution {
 		char[] d = b.toLowerCase().toCharArray();
 		Arrays.sort(c);
 		Arrays.sort(d);
-
-		String f = new String(c);
-		String g = new String(d);
-		return (f.equals(g)) ? true : false;
+		return Arrays.equals(c,d);
 		// end of my code
 	}
 
