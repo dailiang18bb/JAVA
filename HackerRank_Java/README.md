@@ -99,3 +99,9 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 		String largest = substrings.get(substrings.size() - 1);
 		return smallest + "\n" + largest;
 	}
+
+# Java String Reverse
+
+	System.out.println(A.equals(new StringBuilder(A).reverse().toString())?"Yes":"No");
+	
+String cannot use `==` to compare, can only use `[StringName].equals([StringName])`
