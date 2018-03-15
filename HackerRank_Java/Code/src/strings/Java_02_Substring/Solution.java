@@ -13,8 +13,17 @@ public class Solution {
 		String S = in.next();
 		int start = in.nextInt();
 		int end = in.nextInt();
-		
-		//my code
+
+		// my code
 		System.out.println(S.substring(start, end));
 	}
+
 }
+
+//Solution 2
+/*
+public static void main(String[] args) {
+	  Scanner in = new Scanner(System.in);
+	  System.out.print(in.next().substring(in.nextInt(),in.nextInt()));
+	}
+*/
