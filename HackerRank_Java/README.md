@@ -99,3 +99,25 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 		String largest = substrings.get(substrings.size() - 1);
 		return smallest + "\n" + largest;
 	}
+
+# Java String Reverse
+
+	// since Java 1.5 use StringBuilder
+	System.out.println(A.equals(new StringBuilder(A).reverse().toString()) ? "Yes" : "No");
+	// before Java 1.5 use StringBuffer
+	System.out.println(A.equals(new StringBuffer(A).reverse().toString()) ? "Yes" : "No");
+		
+	
+String cannot use `==` to compare, can only use `[StringName].equals([StringName])`
+
+Explanation: Here we are creating two objects namely s1 and s2.
+
+Both s1 and s2 refers to different objects.
+
+When we use == operator for s1 and s2 comparison then the result is false as both have different addresses in memory.
+
+Using equals, the result is true because its only comparing the values given in s1 and s2.
+
+
+https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
+https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html
