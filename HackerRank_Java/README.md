@@ -121,3 +121,24 @@ Using equals, the result is true because its only comparing the values given in 
 
 https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuilder.html
 https://docs.oracle.com/javase/7/docs/api/java/lang/StringBuffer.html
+
+# Java Anagrams
+
+	static boolean isAnagram(String a, String b) {
+		// Complete the function
+		char[] c = a.toLowerCase().toCharArray();
+		char[] d = b.toLowerCase().toCharArray();
+		Arrays.sort(c);
+		Arrays.sort(d);
+		return Arrays.equals(c,d);
+		// end of my code
+	}
+
+`replaceAll("[\\s]", "")` works for removing one single space.
+
+	String replaceAll(String regex, String replacement)
+	
+Arrays class 
+https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+
+Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`, `Arrays.toString([ArrayName])`
