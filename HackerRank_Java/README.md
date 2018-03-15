@@ -102,6 +102,10 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 
 # Java String Reverse
 
-	System.out.println(A.equals(new StringBuilder(A).reverse().toString())?"Yes":"No");
+	// since Java 1.5 use StringBuilder
+	System.out.println(A.equals(new StringBuilder(A).reverse().toString()) ? "Yes" : "No");
+	// before Java 1.5 use StringBuffer
+	System.out.println(A.equals(new StringBuffer(A).reverse().toString()) ? "Yes" : "No");
+		
 	
 String cannot use `==` to compare, can only use `[StringName].equals([StringName])`
