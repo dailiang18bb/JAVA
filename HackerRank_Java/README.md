@@ -80,3 +80,6 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 	System.out.println(A.substring(0, 1).toUpperCase() + A.substring(1) + " " + 
                            B.substring(0, 1).toUpperCase()+ B.substring(1));
 	
+# Java SubString
+
+	System.out.println(S.substring(start,end));
