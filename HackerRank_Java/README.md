@@ -83,3 +83,19 @@ https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
 # Java SubString
 
 	System.out.println(S.substring(start,end));
+
+# Java Substring Comparisons
+
+	public static String getSmallestAndLargestList(String s, int k) {
+		Vector<String> substrings = new Vector<String>();
+		for (int i = 0; i <= s.length() - k; i++) {
+			// Add a substring of length 'k' to our list
+			substrings.add( s.substring(i, i + k) );
+		}
+		// Sort list
+		Collections.sort(substrings);
+		// Set first and last elements as smallest and largest
+		String smallest = substrings.get(0);
+		String largest = substrings.get(substrings.size() - 1);
+		return smallest + "\n" + largest;
+	}
