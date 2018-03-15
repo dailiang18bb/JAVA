@@ -11,6 +11,10 @@ public class Solution {
 		String A = sc.next();
 		/* Enter your code here. Print output to STDOUT. */
 		
+		// since Java 1.5 use StringBuilder
 		System.out.println(A.equals(new StringBuilder(A).reverse().toString())?"Yes":"No");
+		// before Java 1.5 use StringBuffer
+		System.out.println(A.equals(new StringBuilder(A).reverse().toString())?"Yes":"No");
+		
 	}
 }
