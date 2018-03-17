@@ -10,21 +10,23 @@ public class Solution {
 		String s = scan.nextLine();
 		// Write your code here.
 		scan.close();
-		
+
+		// Starting my code
 		String a = s.trim();
 		if (a.isEmpty()) {
 			System.out.println("0");
 		} else {
-			String[] b = a.trim().split("[ !,?._'@]+");
-			// String[] a = s.split("[^a-zA-Z]+");
+			String[] b = a.split("[ !,?._'@]+");
+			// String[] b = a.split("[^a-zA-Z]+");
 			System.out.println(b.length);
 			for (int i = 0; i < b.length; i++) {
 				System.out.println(b[i]);
 			}
 		}
-
 	}
 }
+
+
 
 /* Instructor solution
  * 
