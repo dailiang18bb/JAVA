@@ -146,6 +146,8 @@ Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`,
 
 # Java Regular expression
 
+https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#sum
+
 `[StringName].trim()`Returns a copy of the string, with leading and trailing whitespace omitted.
 
 	String a = s.trim();
