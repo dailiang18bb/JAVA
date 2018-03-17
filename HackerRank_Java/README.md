@@ -142,3 +142,9 @@ Arrays class
 https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
 
 Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`, `Arrays.toString([ArrayName])`
+
+
+# Java Regular expression
+
+`[StringName].trim()`Returns a copy of the string, with leading and trailing whitespace omitted.
+
