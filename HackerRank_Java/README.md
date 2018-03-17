@@ -180,3 +180,30 @@ Pattern class https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.
 		} catch (PatternSyntaxException e) {
 			System.out.println("Invalid");
 			}
+# Java Regex IP address check
+
+`IPv4 address check regex: `(([0-1]?\d?\d|2[0-4]\d|25[0-5])\.){3}(25[0-5]|[0-1]?\d\d?|2[0-4]\d|25[0-5])
+
+	class Solution {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		while (in.hasNext()) {
+			String IP = in.next();
+			System.out.println(IP.matches(new MyRegex().pattern));
+			// IP.matches
+		}
+	}
+	}
+
+	// Write your code here
+
+	class MyRegex {
+
+	String pattern = "(([0-1]?\\d\\d?|2[0-4]\\d|25[0-5])\\.){3}(25[0-5]|[0-1]?\\d\\d?|2[0-4]\\d|25[0-5])";
+
+	}
+
+
+class concept
+
