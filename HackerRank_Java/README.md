@@ -148,3 +148,15 @@ Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`,
 
 `[StringName].trim()`Returns a copy of the string, with leading and trailing whitespace omitted.
 
+	String a = s.trim();
+		if (a.isEmpty()) {
+			System.out.println("0");
+		} else {
+			String[] b = a.split("[ !,?._'@]+");
+			// String[] a = s.split("[^a-zA-Z]+");
+			System.out.println(b.length);
+			for (int i = 0; i < b.length; i++) {
+				System.out.println(b[i]);
+			}
+		}
+
