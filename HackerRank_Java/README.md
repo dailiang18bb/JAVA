@@ -142,3 +142,29 @@ Arrays class
 https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
 
 Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`, `Arrays.toString([ArrayName])`
+
+
+# Java Regular expression
+
+https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#sum  
+Useful website to test your regEx
+https://www.regexpal.com/  
+Learning regex websites  
+https://deerchao.net/tutorials/regex/regex.htm  
+http://www.infoq.com/cn/articles/regular-expressions-introduction-part01  
+
+
+`[StringName].trim()`Returns a copy of the string, with leading and trailing whitespace omitted.
+
+	String a = s.trim();
+		if (a.isEmpty()) {
+			System.out.println("0");
+		} else {
+			String[] b = a.split("[ !,?._'@]+");
+			// String[] a = s.split("[^a-zA-Z]+");
+			System.out.println(b.length);
+			for (int i = 0; i < b.length; i++) {
+				System.out.println(b[i]);
+			}
+		}
+
