@@ -168,3 +168,15 @@ http://www.infoq.com/cn/articles/regular-expressions-introduction-part01  
 			}
 		}
 
+# Java Pattern Syntax Checker
+
+Pattern class https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html#compile%28java.lang.String%29  
+`Pattern.compile([regex]);` Compiles the given regular expression into a pattern.  
+`matches([String regex],[CharSequence input])` Compiles the given regular expression and attempts to match the given input against it.
+
+	try {
+		Pattern p = Pattern.compile(pattern);
+		System.out.println("Valid");\
+		} catch (PatternSyntaxException e) {
+			System.out.println("Invalid");
+			}
