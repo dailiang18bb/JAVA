@@ -274,3 +274,25 @@ The most important
 
 `[StringName].matches([regex])` This method returns true if, and only if, this string matches the given regular expression.  
 https://www.tutorialspoint.com/java/java_string_matches.htm
+
+# Java Regex Tag Content Extractor
+
+
+	String regex = "<(.+)>([^<]+)<\\/\\1>";
+	while (testCases > 0) {
+			String line = in.nextLine();
+
+			// Write your code here
+			Matcher m = p.matcher(line);
+			if (m.find()) {
+				do {
+					System.out.println(m.group(2));
+				} while (m.find());
+			} else {
+				System.out.println("None");
+			}
+			testCases--;
+		}
+		
+`"<(.+)>([^<]+)<\\/\\1>"` regex for testing `<h1>Nayeem loves counseling</h1>`.  
+review `do{} while();`
