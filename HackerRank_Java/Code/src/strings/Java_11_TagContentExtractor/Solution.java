@@ -12,6 +12,9 @@ public class Solution {
 		Scanner in = new Scanner(System.in);
 		int testCases = Integer.parseInt(in.nextLine());
 
+		// Problem Setter's code:
+		// String pattern = "<([^>]+)>([^<>]+)</\\1>";
+		// My code:
 		String regex = "<(.+)>([^<]+)<\\/\\1>";
 		Pattern p = Pattern.compile(regex);
 
@@ -22,11 +25,7 @@ public class Solution {
 			Matcher m = p.matcher(line);
 			if (m.find()) {
 				do {
-					line = m.group(2);
-//					line = line.replaceAll(m.group(1), "");
-//					line = line.replace("<>", "");
-//					line = line.replace("</>", "");
-					System.out.println(line);
+					System.out.println(m.group(2));
 				} while (m.find());
 			} else {
 				System.out.println("None");
