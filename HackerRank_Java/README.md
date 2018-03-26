@@ -271,4 +271,5 @@ The most important
 	}
 	}
 
-`[StringName].matches([regex])` This method returns true if, and only if, this string matches the given regular expression.
+`[StringName].matches([regex])` This method returns true if, and only if, this string matches the given regular expression.  
+https://www.tutorialspoint.com/java/java_string_matches.htm
