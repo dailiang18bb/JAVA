@@ -210,6 +210,7 @@ class concept
 # Java Regex delete duplicate words
 http://tutorials.jenkov.com/java-regex/matcher.html
 
+
 	public static void main(String[] args) {
 
         String regex = "\\b(\\w+)(\\s+\\1){1,}\\b";
@@ -224,7 +225,7 @@ http://tutorials.jenkov.com/java-regex/matcher.html
             // Check for subsequences of input that match the compiled pattern
             while (m.find()) {
             	// m.group() the entire match
-            	// m.group(1) the first group match
+            	// m.group(1) the first group match
                 input = input.replaceAll(m.group(), m.group(1));    
             }     
             // Prints the modified sentence.
