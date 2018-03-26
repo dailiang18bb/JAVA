@@ -207,3 +207,28 @@ Pattern class https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.
 
 class concept
 
+# Java Regex delete duplicate words
+http://tutorials.jenkov.com/java-regex/matcher.html
+
+	public static void main(String[] args) {
+
+        String regex = "\\b(\\w+)(\\s+\\1){1,}\\b";
+        Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+
+        Scanner in = new Scanner(System.in);
+        int numSentences = Integer.parseInt(in.nextLine());
+        
+        while (numSentences-- > 0) {
+            String input = in.nextLine();
+            Matcher m = p.matcher(input);
+            // Check for subsequences of input that match the compiled pattern
+            while (m.find()) {
+            	// m.group() the entire match
+            	// . group(1) the first group match
+                input = input.replaceAll(m.group(), m.group(1));    
+            }     
+            // Prints the modified sentence.
+            System.out.println(input);
+        }        
+        in.close();        
+    }
