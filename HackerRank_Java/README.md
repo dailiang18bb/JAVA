@@ -295,4 +295,5 @@ https://www.tutorialspoint.com/java/java_string_matches.htm
 		}
 		
 `"<(.+)>([^<]+)<\\/\\1>"` regex for testing `<h1>Nayeem loves counseling</h1>`.  
-review `do{} while();`
+review `do{} while();`  
+Dowhile can run at least once no matter what condition is.
