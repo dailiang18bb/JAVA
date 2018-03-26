@@ -233,3 +233,12 @@ http://tutorials.jenkov.com/java-regex/matcher.html
         }        
         in.close();        
     }
+
+
+The most important 
+
+	String regex = "\\b(\\w+)(\\s+\\1){1,}\\b";
+	Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
+	Matcher m = p.matcher(input);
+	m.find()
+	input = input.replaceAll(m.group(), m.group(1)); 
