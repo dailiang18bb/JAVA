@@ -224,7 +224,7 @@ http://tutorials.jenkov.com/java-regex/matcher.html
             // Check for subsequences of input that match the compiled pattern
             while (m.find()) {
             	// m.group() the entire match
-            	// . group(1) the first group match
+            	// m.group(1) the first group match
                 input = input.replaceAll(m.group(), m.group(1));    
             }     
             // Prints the modified sentence.
