@@ -6,7 +6,6 @@ class UsernameValidator {
 	/*
 	 * Write regular expression here.
 	 */
-	
 	//Problem Setter's code: "^[a-zA-Z][a-zA-Z0-9_]{7,29}$";
 	public static final String regularExpression = "\\b[a-zA-Z][a-zA-Z0-9_]{7,29}\\b";
 
