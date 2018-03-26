@@ -147,8 +147,9 @@ Common use `Arrays.sort([ArrayName])`, `Arrays.equals([ArrayName],[ArrayName])`,
 # Java Regular expression
 
 https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html#sum  
-Useful website to test your regEx
+Useful website to test your regEx  
 https://www.regexpal.com/  
+https://regexr.com  
 Learning regex websites  
 https://deerchao.net/tutorials/regex/regex.htm  
 http://www.infoq.com/cn/articles/regular-expressions-introduction-part01  
