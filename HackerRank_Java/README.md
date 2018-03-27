@@ -309,3 +309,22 @@ https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html
 	System.out.println(a.multiply(b));
 
 BigInteger cannot use the [+-*/], use `.add`, `.mutiply`, `.subtract` and `.divide`
+
+# Java BigDecimal
+https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+
+	Arrays.sort(s, 0, n, Collections.reverseOrder(new Comparator<String>() {
+			@Override
+			public int compare(String a1, String a2) {
+				// convert to big decimal inside comparator
+				// so permanent string values are never changed
+				// aka you only use the BigDecimal values to
+				// compare the strings!
+				BigDecimal a = new BigDecimal(a1);
+				BigDecimal b = new BigDecimal(a2);
+				return a.compareTo(b);
+			}
+		}));
+		
+Override the compare method inside the comparator.  
+convert to big decimal inside comparator so permanent string values are never changed aka you only use the BigDecimal values to compare the strings!
