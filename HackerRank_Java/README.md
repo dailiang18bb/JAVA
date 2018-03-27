@@ -309,3 +309,29 @@ https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html
 	System.out.println(a.multiply(b));
 
 BigInteger cannot use the [+-*/], use `.add`, `.mutiply`, `.subtract` and `.divide`
+
+# Java BigDecimal
+https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+
+	Arrays.sort(s, 0, n, Collections.reverseOrder(new Comparator<String>() {
+			@Override
+			public int compare(String a1, String a2) {
+				// convert to big decimal inside comparator
+				// so permanent string values are never changed
+				// aka you only use the BigDecimal values to
+				// compare the strings!
+				BigDecimal a = new BigDecimal(a1);
+				BigDecimal b = new BigDecimal(a2);
+				return a.compareTo(b);
+			}
+		}));
+		
+Override the compare method inside the comparator.  
+convert to big decimal inside comparator so permanent string values are never changed aka you only use the BigDecimal values to compare the strings!
+
+# Java Primality Test
+https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html#isProbablePrime%28int%29
+
+	System.out.println(n.isProbablePrime(1) ? "prime" : "not prime");
+
+certainty - a measure of the uncertainty that the caller is willing to tolerate: if the call returns true the probability that this BigInteger is prime exceeds (1 - 1/2certainty). The execution time of this method is proportional to the value of this parameter.
