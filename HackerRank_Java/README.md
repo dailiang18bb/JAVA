@@ -329,7 +329,7 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
 Override the compare method inside the comparator.  
 convert to big decimal inside comparator so permanent string values are never changed aka you only use the BigDecimal values to compare the strings!
 
-# Java BigDecimal
+# Java Primality Test
 https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html#isProbablePrime%28int%29
 
 	System.out.println(n.isProbablePrime(1) ? "prime" : "not prime");
