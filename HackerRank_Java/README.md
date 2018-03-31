@@ -345,6 +345,7 @@ certainty - a measure of the uncertainty that the caller is willing to tolerate:
 
 
 # Java SubArray
+https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#copyOf(int[],%20int)
 
 	Arrays.copyOf(int[] original, int newLength)
 	Arrays.copyOfRange(int[] original, int from, int to)
