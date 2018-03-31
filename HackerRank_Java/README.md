@@ -342,3 +342,15 @@ https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html#isProbablePr
 	System.out.println(n.isProbablePrime(1) ? "prime" : "not prime");
 
 certainty - a measure of the uncertainty that the caller is willing to tolerate: if the call returns true the probability that this BigInteger is prime exceeds (1 - 1/2certainty). The execution time of this method is proportional to the value of this parameter.
+
+
+# Java SubArray
+https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#copyOf(int[],%20int)
+
+	Arrays.copyOf(int[] original, int newLength)
+	Arrays.copyOfRange(int[] original, int from, int to)
+	
+original - the array from which a range is to be copied  
+newLength - the length of the copy to be returned  
+from - the initial index of the range to be copied, inclusive  
+to - the final index of the range to be copied, exclusive. (This index may lie outside the array.)
