@@ -5,6 +5,7 @@ import java.util.*;
 
 public class Solution {
 
+	//method to sum the arr
 	private static int sumArr(int[] array) {
 		int sum = 0;
 		for (int num : array) {
@@ -25,6 +26,7 @@ public class Solution {
 			arr[i] = in.nextInt();
 		}
 
+		
 		int countNegativeSum = 0;
 		int[] tempArr = new int[n];
 
