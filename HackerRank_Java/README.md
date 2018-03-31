@@ -1,6 +1,13 @@
 # HackerRank_JAVA
 note what I learned from doing the JAVA exercise on HackerRank
 
+
+# My reminder
+on
+1. pay attention on the scope out the variables.
+
+
+
 # Primitive Data Types
 https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
 
