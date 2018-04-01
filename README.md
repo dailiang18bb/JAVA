@@ -11,6 +11,7 @@ Studying JAVA
 
 
 # Eclipse short cut
+`command + 1` //Quick fix  
 `command + shift + o` //Auto adjust the import  
 `command + shift + f` //Adjust the format
 
