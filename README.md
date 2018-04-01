@@ -11,7 +11,7 @@ Studying JAVA
 
 
 # Eclipse short cut
-command + shift + o //Auto adjust the import  
-command + shift + f //Adjust the format
+`command + shift + o` //Auto adjust the import  
+`command + shift + f` //Adjust the format
 
 
