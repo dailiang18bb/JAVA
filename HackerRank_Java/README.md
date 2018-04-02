@@ -354,3 +354,21 @@ original - the array from which a range is to be copied
 newLength - the length of the copy to be returned  
 from - the initial index of the range to be copied, inclusive  
 to - the final index of the range to be copied, exclusive. (This index may lie outside the array.)
+
+# Java 1D Array Part2
+very hard should use DFS recursion
+https://www.hackerrank.com/challenges/java-1d-array/problem
+
+	public static boolean leapJump(int k, int leap, int[] game) {
+
+		if (k < 0 || game[k] == 1) {
+			return false;
+		}
+		if (k == game.length - 1 || k + leap > game.length - 1) {
+			return true;
+		}
+
+		game[k] = 1;
+
+		return leapJump(k + 1, leap, game) || leapJump(k - 1, leap, game) || leapJump(k + leap, leap, game);
+	}
