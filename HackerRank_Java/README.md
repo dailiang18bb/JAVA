@@ -377,6 +377,8 @@ https://www.hackerrank.com/challenges/java-1d-array/problem
 
 	list.add(index, element); //index couldn't larger than list.size()
 	list.add(e); //add to the end of the list
+	list.remove(index); // index
+	list.remove(o); //object
 
 String conpare using `.equals()`  
 e.g.`in.next().equals("Insert")`
