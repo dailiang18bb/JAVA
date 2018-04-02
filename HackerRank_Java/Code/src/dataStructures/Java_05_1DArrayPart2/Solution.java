@@ -6,7 +6,6 @@ public class Solution {
 
 	public static boolean canWin(int leap, int[] game) {
 		// Return true if you can win the game; otherwise, return false.
-
 		// when leap = 0|1
 		if (leap <= 1) {
 			for (int i = 0; i < game.length; i++) {
@@ -21,36 +20,22 @@ public class Solution {
 			} else {
 				return false;
 			}
-
 		}
 	}
 
 	// when leap >= 2
 	public static boolean leapJump(int k, int leap, int[] game) {
 
-		int[] subLeap = new int[leap];
-		boolean flag = false;
-
-		if (k == game.length - 1 || k + leap >= game.length - 1) {
+		if (k < 0 || game[k] == 1) {
+			return false;
+		}
+		if (k == game.length - 1 || k + leap > game.length - 1) {
 			return true;
 		}
 
-		for (int i = k; i < game.length; i++) {
-			if ((i + leap - 1) >= game.length) {
-				return true;
-			} else {
-				subLeap = Arrays.copyOfRange(game, i, i + leap + 1);
-				flag = (subLeap[0] == 0 && subLeap[leap] == 0) ? true : false;
-				if (flag) {
-					if (leapJump(i + leap, leap, game)) {
-						return true;
-					}
-				} else if (subLeap[0] == 1 && subLeap[subLeap.length - 2] == 1) {
-					break;
-				}
-			}
-		}
-		return false;
+		game[k] = 1;
+
+		return leapJump(k + 1, leap, game) || leapJump(k - 1, leap, game) || leapJump(k + leap, leap, game);
 	}
 
 	public static void main(String[] args) {
@@ -70,3 +55,16 @@ public class Solution {
 		scan.close();
 	}
 }
+
+
+/**
+ * DFS great solution
+ */
+// private static boolean isSolvable(int m, int[] arr, int i) {
+// if (i < 0 || arr[i] == 1) return false;
+// if ((i == arr.length - 1) || i + m > arr.length - 1) return true;
+//
+// arr[i] = 1;
+// return isSolvable(m, arr, i + 1) || isSolvable(m, arr, i - 1) ||
+// isSolvable(m, arr, i + m);
+// }
