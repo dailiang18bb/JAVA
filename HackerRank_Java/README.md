@@ -388,3 +388,5 @@ Enhanced for loop
 	for (Integer p : list) {
 			System.out.print(p + " ");
 		}
+
+Don't forget to close the Scanner `in.close();`
