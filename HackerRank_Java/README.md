@@ -381,4 +381,10 @@ https://www.hackerrank.com/challenges/java-1d-array/problem
 	list.remove(o); //object
 
 String conpare using `.equals()`  
-e.g.`in.next().equals("Insert")`
+e.g.`in.next().equals("Insert")`  
+
+Enhanced for loop
+
+	for (Integer p : list) {
+			System.out.print(p + " ");
+		}
