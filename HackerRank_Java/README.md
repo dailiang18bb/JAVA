@@ -372,3 +372,11 @@ https://www.hackerrank.com/challenges/java-1d-array/problem
 
 		return leapJump(k + 1, leap, game) || leapJump(k - 1, leap, game) || leapJump(k + leap, leap, game);
 	}
+
+# Java List
+
+	list.add(index, element); //index couldn't larger than list.size()
+	list.add(e); //add to the end of the list
+
+String conpare using `.equals()`  
+e.g.`in.next().equals("Insert")`
