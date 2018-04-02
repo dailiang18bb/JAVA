@@ -1,7 +1,7 @@
 package dataStructures.Java_03_Subarray;
 
-import java.io.*;
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
 public class Solution {
 
@@ -25,6 +25,7 @@ public class Solution {
 		for (int i = 0; i < n; i++) {
 			arr[i] = in.nextInt();
 		}
+		in.close();
 
 		
 		int countNegativeSum = 0;
@@ -37,5 +38,6 @@ public class Solution {
 			}
 		}
 		System.out.println(countNegativeSum);
+		
 	}
 }
