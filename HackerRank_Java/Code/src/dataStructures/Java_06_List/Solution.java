@@ -12,13 +12,12 @@ public class Solution {
 		 */
 		Scanner in = new Scanner(System.in);
 		int numElement = in.nextInt();
-		ArrayList<Integer> list = new ArrayList<Integer>();
+		ArrayList<Integer> list = new ArrayList<Integer>();		
 		for (int i = 0; i < numElement; i++) {
 			list.add(in.nextInt());
 		}
 		int numQueries = in.nextInt();
 		for (int j = 0; j < numQueries; j++) {
-			
 			if (in.next().equals("Insert")) {
 				int n = in.nextInt();
 				int m = in.nextInt();
@@ -36,4 +35,7 @@ public class Solution {
 			System.out.print(p + " ");
 		}
 	}
+	
+	
+	
 }
