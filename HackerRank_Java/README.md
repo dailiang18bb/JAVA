@@ -435,6 +435,7 @@ e.g.`in.next().equals("Insert")`
 print Array 
 
 # Java Map
+https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html
 	
 	Map<String, Integer> map = new HashMap<String, Integer>();
 	map.put(name, phone);
@@ -443,4 +444,8 @@ print Array
 			} else {
 				System.out.println("Not found");
 			}
+
+`put(K, V)`
+`get(K)` return V
+`containsKey(K)` return boolean
 
