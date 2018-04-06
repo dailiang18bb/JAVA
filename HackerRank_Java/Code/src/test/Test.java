@@ -8,9 +8,5 @@ import javax.net.ssl.HandshakeCompletedEvent;
 public class Test {
 
 	public static void main(String[] args) {
-
-		Map<String, Integer> Name = new Map<String, Integer>();
-
 	}
-
 }
