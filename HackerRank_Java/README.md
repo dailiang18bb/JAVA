@@ -445,7 +445,7 @@ https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html
 				System.out.println("Not found");
 			}
 
-`put(K, V)`
-`get(K)` return V
+`put(K, V)`  
+`get(K)` return V  
 `containsKey(K)` return boolean
 
