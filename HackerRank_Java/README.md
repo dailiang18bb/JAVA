@@ -433,3 +433,14 @@ String conpare using `.equals()`
 e.g.`in.next().equals("Insert")`
 
 print Array 
+
+# Java Map
+	
+	Map<String, Integer> map = new HashMap<String, Integer>();
+	map.put(name, phone);
+	if (map.containsKey(s)) {
+				System.out.println(s + "=" + map.get(s));
+			} else {
+				System.out.println("Not found");
+			}
+
