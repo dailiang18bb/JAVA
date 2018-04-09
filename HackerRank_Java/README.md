@@ -494,6 +494,13 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
 # Java HashSet
 
 Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  
-###### The important points about Java HashSet class are:
+##### The important points about Java HashSet class are:
 1. HashSet stores the elements by using a mechanism called hashing.
-2. HashSet contains unique elements only.
+2. HashSet contains unique elements only.  
+
+
+		HashSet<String> hSet = new HashSet<String>();
+		for (int i = 0; i < t; i++) {
+			hSet.add(pair_left[i] + " " + pair_right[i]);
+			System.out.println(hSet.size());
+		}
