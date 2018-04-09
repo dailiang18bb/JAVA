@@ -449,3 +449,58 @@ https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html
 `get(K)` return V  
 `containsKey(K)` return boolean
 
+# Java Stack
+https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
+`FILO`First in last out
+
+	while (sc.hasNext()) {
+			String input = sc.next();
+			// Complete the code
+			Stack<Character> st = new Stack<Character>();
+
+			for (int i = 0; i < input.length(); i++) {
+				if (!st.empty()) {
+
+					switch (input.charAt(i)) {
+					case ']':
+						if (st.peek().equals('['))
+							st.pop();
+						break;
+					case '}':
+						if (st.peek().equals('{'))
+							st.pop();
+						break;
+					case ')':
+						if (st.peek().equals('('))
+							st.pop();
+						break;
+					default:
+						st.push(input.charAt(i));
+						break;
+					}
+				} else {
+					st.push(input.charAt(i));
+				}
+			}
+
+			System.out.println(st.empty());
+		}
+		
+		
+`push()`, `pop()`,`peek()`,`empty()`,`search()`
+`switch` and `case` 
+
+
+# Java HashSet
+
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  
+##### The important points about Java HashSet class are:
+1. HashSet stores the elements by using a mechanism called hashing.
+2. HashSet contains unique elements only.  
+
+
+		HashSet<String> hSet = new HashSet<String>();
+		for (int i = 0; i < t; i++) {
+			hSet.add(pair_left[i] + " " + pair_right[i]);
+			System.out.println(hSet.size());
+		}
