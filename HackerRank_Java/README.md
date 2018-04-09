@@ -449,3 +449,43 @@ https://docs.oracle.com/javase/7/docs/api/java/util/HashMap.html
 `get(K)` return V  
 `containsKey(K)` return boolean
 
+# Java Stack
+https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
+`FILO`First in last out
+
+	while (sc.hasNext()) {
+			String input = sc.next();
+			// Complete the code
+			Stack<Character> st = new Stack<Character>();
+
+			for (int i = 0; i < input.length(); i++) {
+				if (!st.empty()) {
+
+					switch (input.charAt(i)) {
+					case ']':
+						if (st.peek().equals('['))
+							st.pop();
+						break;
+					case '}':
+						if (st.peek().equals('{'))
+							st.pop();
+						break;
+					case ')':
+						if (st.peek().equals('('))
+							st.pop();
+						break;
+					default:
+						st.push(input.charAt(i));
+						break;
+					}
+				} else {
+					st.push(input.charAt(i));
+				}
+			}
+
+			System.out.println(st.empty());
+		}
+		
+		
+`push()`, `pop()`,`peek()`,`empty()`,`search()`
+`switch` and `case` 
