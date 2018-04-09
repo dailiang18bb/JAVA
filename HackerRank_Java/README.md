@@ -492,8 +492,9 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
 
 
 # Java HashSet
-
+A set is an abstract data type that can store certain values, without any particular order, and no repeated values.  
 Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  
+https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
 ##### The important points about Java HashSet class are:
 1. HashSet stores the elements by using a mechanism called hashing.
 2. HashSet contains unique elements only.  
