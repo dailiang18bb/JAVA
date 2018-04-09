@@ -489,3 +489,11 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
 		
 `push()`, `pop()`,`peek()`,`empty()`,`search()`
 `switch` and `case` 
+
+
+# Java HashSet
+
+Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  
+###### The important points about Java HashSet class are:
+1. HashSet stores the elements by using a mechanism called hashing.
+2. HashSet contains unique elements only.
