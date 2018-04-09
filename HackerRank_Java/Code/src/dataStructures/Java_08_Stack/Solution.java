@@ -11,61 +11,33 @@ class Solution {
 			String input = sc.next();
 			// Complete the code
 			Stack<Character> st = new Stack<Character>();
-			char[] ch = new char[input.length()];
-			ch = input.toCharArray();
 
-			for (char ar : ch) {
+			for (int i = 0; i < input.length(); i++) {
+				if (!st.empty()) {
 
-				if (ar == '(' || ar == '{' || ar == '[') {
-					st.push(ar);
-				} else if (ar == ')') {
-					if (st.peek() == '(') {
-						try {
+					switch (input.charAt(i)) {
+					case ']':
+						if (st.peek().equals('['))
 							st.pop();
-						} catch (Exception e) {
-							System.out.println("false");
-							break;
-						}
-					} else {
-						System.out.println("false");
+						break;
+					case '}':
+						if (st.peek().equals('{'))
+							st.pop();
+						break;
+					case ')':
+						if (st.peek().equals('('))
+							st.pop();
+						break;
+					default:
+						st.push(input.charAt(i));
 						break;
 					}
-
-				} else if (ar == ']') {
-					if (st.peek() == '[') {
-						try {
-							st.pop();
-						} catch (Exception e) {
-							System.out.println("false");
-							break;
-						}
-					} else {
-						System.out.println("false");
-						break;
-					}
-
+				} else {
+					st.push(input.charAt(i));
 				}
-
-				else if (ar == '}') {
-					if (st.peek() == '{') {
-						try {
-							st.pop();
-						} catch (Exception e) {
-							System.out.println("false");
-							break;
-						}
-					} else {
-						System.out.println("false");
-						break;
-					}
-
-				}
-				
 			}
-			if(st.empty()) {
-				System.out.println("true");
-			}
-			
+
+			System.out.println(st.empty());
 		}
 		sc.close();
 	}
