@@ -492,8 +492,9 @@ https://docs.oracle.com/javase/7/docs/api/java/util/Stack.html
 
 
 # Java HashSet
-
+A set is an abstract data type that can store certain values, without any particular order, and no repeated values.  
 Java HashSet class is used to create a collection that uses a hash table for storage. It inherits the AbstractSet class and implements Set interface.  
+https://docs.oracle.com/javase/7/docs/api/java/util/HashSet.html
 ##### The important points about Java HashSet class are:
 1. HashSet stores the elements by using a mechanism called hashing.
 2. HashSet contains unique elements only.  
@@ -504,3 +505,21 @@ Java HashSet class is used to create a collection that uses a hash table for sto
 			hSet.add(pair_left[i] + " " + pair_right[i]);
 			System.out.println(hSet.size());
 		}
+
+
+# Java Generics
+https://docs.oracle.com/javase/tutorial/java/generics/types.html  
+https://www.youtube.com/watch?v=QB5pQT45zvg  
+We can use Java Generic concept to print an array of objects, then invoke the generic method to print Integer arrays, Double arrays, String arrays etc.  
+In the java generic method declaration, a type parameter section delimited by angle brackets (< and >) precedes the method's return type.  
+The body of the generic method is declared like any other method and we use type parameters like T, E to represent reference types, primitive types like int, float are not used.
+
+
+	class Printer {
+	// Write your code here
+	public static <T> void printArray(T[] mT) {
+		for (T n : mT) {
+			System.out.println(n);
+		}
+	}
+	}
