@@ -18,6 +18,8 @@ public class Solution {
 			pair_left[i] = s.next();
 			pair_right[i] = s.next();
 		}
+		
+		
 		// Write your code here
 		s.close();
 		HashSet<String> hSet = new HashSet<String>();
@@ -26,5 +28,6 @@ public class Solution {
 			System.out.println(hSet.size());
 		}
 		// end my code here
+			
 	}
 }
