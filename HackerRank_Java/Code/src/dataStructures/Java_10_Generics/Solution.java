@@ -3,17 +3,12 @@ package dataStructures.Java_10_Generics;
 import java.io.IOException;
 import java.lang.reflect.Method;
 
-
 class Printer {
 	// Write your code here
-
-	
 	public static <T> void printArray(T[] mT) {
-
-		for( T n : mT) {
+		for (T n : mT) {
 			System.out.println(n);
 		}
-		
 	}
 }
 
