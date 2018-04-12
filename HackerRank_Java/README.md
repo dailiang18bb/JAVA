@@ -3,7 +3,6 @@ note what I learned from doing the JAVA exercise on HackerRank
 
 
 # My reminder
-on
 1. pay attention on the scope out the variables.
 
 
@@ -523,3 +522,23 @@ The body of the generic method is declared like any other method and we use type
 		}
 	}
 	}
+
+# Java Comparator
+https://blog.csdn.net/renfufei/article/details/16359297
+### Arrays.sort @Override compare method
+
+
+	//sort(T[] a, Comparator<? super T> c)
+	class Checker implements Comparator<Player> {
+
+	@Override
+	public int compare(Player p1, Player p2) {
+
+		if (p1.score == p2.score) {
+			return p1.name.compareTo(p2.name);
+		} else {
+			return p2.score - p1.score;
+		}
+	}
+	}
+
