@@ -28,6 +28,24 @@ class Student {
 	}
 }
 
+
+//my Override Comparator class
+class checkGPA implements Comparator<Student> {
+
+	@Override
+	public int compare(Student s1, Student s2) {
+		if (s1.getCgpa() == s2.getCgpa()) {
+			if (s1.getFname() == s2.getFname()) {
+				return s1.getId() - s2.getId();
+			} else {
+				return s1.getFname().compareTo(s2.getFname());
+			}
+		} else {
+			return (s2.getCgpa() - s1.getCgpa()) < 0 ? -1 : (s2.getCgpa() == s1.getCgpa() ? 0 : 1);
+		}
+	}
+}
+
 // Complete the code
 public class Solution {
 	public static void main(String[] args) {
@@ -48,24 +66,21 @@ public class Solution {
 		in.close();
 
 		// my code
+
 		// Java 8 works
 
-		studentList.sort(new Comparator<Student>() {
-
-			@Override
-			public int compare(Student s1, Student s2) {
-				if (s1.getCgpa() == s2.getCgpa()) {
-					if (s1.getFname() == s2.getFname()) {
-						return s1.getId() - s2.getId();
-					} else {
-						return s1.getFname().compareTo(s2.getFname());
-					}
-				} else {
-					return (s2.getCgpa() - s1.getCgpa()) < 0 ? -1 : (s2.getCgpa() == s1.getCgpa() ? 0 : 1);
-				}
-			}
-		});
+		/*
+		 * studentList.sort(new Comparator<Student>() {
+		 * 
+		 * @Override public int compare(Student s1, Student s2) { if (s1.getCgpa() ==
+		 * s2.getCgpa()) { if (s1.getFname() == s2.getFname()) { return s1.getId() -
+		 * s2.getId(); } else { return s1.getFname().compareTo(s2.getFname()); } } else
+		 * { return (s2.getCgpa() - s1.getCgpa()) < 0 ? -1 : (s2.getCgpa() ==
+		 * s1.getCgpa() ? 0 : 1); } } });
+		 */
 		// end my code
+
+		Collections.sort(studentList, new checkGPA());
 
 		for (Student st : studentList) {
 			System.out.println(st.getFname());
