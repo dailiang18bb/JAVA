@@ -563,6 +563,6 @@ https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html
 			}
 		});
 
-`Arrays.sort([ArrayName], [Override comparator])` deal with arrays
-`Collections.sort([ArrayListName], [Override comparator])` deal with ArrayList
+`Arrays.sort([ArrayName], [Override comparator])` deal with arrays  
+`Collections.sort([ArrayListName], [Override comparator])` deal with ArrayList  
 `studentList.sort(new Comparator<Student>() { // @Override Public int compare ( args1, args2){ // your code}});`
