@@ -542,3 +542,23 @@ https://blog.csdn.net/renfufei/article/details/16359297
 	}
 	}
 
+# Java Sort
+### Override comparator for list
+https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html
+
+
+	studentList.sort(new Comparator<Student>() {
+
+			@Override
+			public int compare(Student s1, Student s2) {
+				if (s1.getCgpa() == s2.getCgpa()) {
+					if (s1.getFname() == s2.getFname()) {
+						return s1.getId() - s2.getId();
+					} else {
+						return s1.getFname().compareTo(s2.getFname());
+					}
+				} else {
+					return (s2.getCgpa() - s1.getCgpa()) < 0 ? -1 : (s2.getCgpa() == s1.getCgpa() ? 0 : 1);
+				}
+			}
+		});
