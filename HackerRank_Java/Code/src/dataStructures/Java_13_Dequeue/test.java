@@ -17,10 +17,15 @@ public class test {
 
 		int max = 0;
 		Set set = new HashSet<>();
-		for (Object row : deque) {
-			set.add(row);
+		for (int i = 0; i < n - m + 1; i++) {
+			for(int j=0;j<m;j++) {
+				set.add(deque.);
+				
+			}
+			
+			
 		}
 		System.out.println(set.size());
-		
+
 	}
 }
