@@ -566,3 +566,35 @@ https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html
 `Arrays.sort([ArrayName], [Override comparator])` deal with arrays  
 `Collections.sort([ArrayListName], new [Override comparator]() )` deal with ArrayList  
 `studentList.sort(new Comparator<Student>() { // @Override Public int compare ( args1, args2){ // your code}});`
+
+
+# Java Abstract and Interface
+### Abstract class
+
+You can always assign a subclass object to a superclass reference.
+
+	abstract class Book {
+		String title;
+		abstract void setTitle(String s);
+		String getTitle() {
+			return title;
+		}
+	}
+
+	class MyBook extends Book {
+
+		@Override
+		void setTitle(String titleString) {
+			super.title = titleString;
+			// this.title = titleString;
+		}
+	}
+
+
+#### Abstract class VS Concrete class
+
+
+#### Abstract method
+* A abstract class must be **extended**
+* A abstract method must be **override**
+* A abstract method has no body `public abstract void eat();`
