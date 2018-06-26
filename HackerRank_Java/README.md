@@ -3,8 +3,8 @@ note what I learned from doing the JAVA exercise on HackerRank
 
 
 # My reminder
-1. pay attention on the scope out the variables.
-
+1. pay attention on the scope out the variables.  
+2. Every class in java is a subclass of Object.
 
 
 # Primitive Data Types
@@ -598,3 +598,6 @@ You can always assign a subclass object to a superclass reference.
 * A abstract class must be **extended**
 * A abstract method must be **override**
 * A abstract method has no body `public abstract void eat();`
+
+### Polymorphic
+If a method marked as final, then it couldn't be overrided.  
