@@ -594,10 +594,28 @@ You can always assign a subclass object to a superclass reference.
 #### Abstract class VS Concrete class
 
 
-#### Abstract method
+#### Abstract
 * A abstract class must be **extended**
+* A abstract method must be implemented by the **first** concret subclass.
 * A abstract method must be **override**
 * A abstract method has no body `public abstract void eat();`
 
+
 ### Polymorphic
 If a method marked as final, then it couldn't be overrided.  
+
+
+### JAVA doesn't allow Multiple inheritance
+Warning : **The Deadly Diamond of Death**  
+
+### Interface
+* A JAVA Interface is like a 100% abstract pure class, all methods in an interface are abstract
+* A class can implement mutiple interfaces
+
+use interface instead of class
+use implements to invoke
+
+	public interface Pet{
+		public abstract void beFriendly();
+		public abstract void play();
+	}
