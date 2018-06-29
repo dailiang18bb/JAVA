@@ -3,8 +3,8 @@ note what I learned from doing the JAVA exercise on HackerRank
 
 
 # My reminder
-1. pay attention on the scope out the variables.
-
+1. pay attention on the scope out the variables.  
+2. Every class in java is a subclass of Object.
 
 
 # Primitive Data Types
@@ -566,3 +566,56 @@ https://docs.oracle.com/javase/tutorial/collections/interfaces/order.html
 `Arrays.sort([ArrayName], [Override comparator])` deal with arrays  
 `Collections.sort([ArrayListName], new [Override comparator]() )` deal with ArrayList  
 `studentList.sort(new Comparator<Student>() { // @Override Public int compare ( args1, args2){ // your code}});`
+
+
+# Java Abstract and Interface
+### Abstract class
+
+You can always assign a subclass object to a superclass reference.
+
+	abstract class Book {
+		String title;
+		abstract void setTitle(String s);
+		String getTitle() {
+			return title;
+		}
+	}
+
+	class MyBook extends Book {
+
+		@Override
+		void setTitle(String titleString) {
+			super.title = titleString;
+			// this.title = titleString;
+		}
+	}
+
+
+#### Abstract class VS Concrete class
+
+
+#### Abstract
+* A abstract class must be **extended**
+* A abstract method must be implemented by the **first** concret subclass.
+* A abstract method must be **override**
+* A abstract method has no body `public abstract void eat();`
+
+
+### Polymorphic
+If a method marked as final, then it couldn't be overrided.  
+
+
+### JAVA doesn't allow Multiple inheritance
+Warning : **The Deadly Diamond of Death**  
+
+### Interface
+* A JAVA Interface is like a 100% abstract pure class, all methods in an interface are abstract
+* A class can implement mutiple interfaces
+
+use interface instead of class
+use implements to invoke
+
+	public interface Pet{
+		public abstract void beFriendly();
+		public abstract void play();
+	}
