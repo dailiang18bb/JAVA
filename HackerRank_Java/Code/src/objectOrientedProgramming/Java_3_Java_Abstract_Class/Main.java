@@ -10,7 +10,6 @@ abstract class Book {
 	String getTitle() {
 		return title;
 	}
-
 }
 
 // Write MyBook class here
@@ -35,6 +34,11 @@ public class Main {
 		new_novel.setTitle(title);
 		System.out.println("The title is: " + new_novel.getTitle());
 		sc.close();
-
+		
+		int a[] = {1,2,3,4,5,6};
+		int b = a.length;
+		
+		
+		
 	}
 }
