@@ -24,6 +24,9 @@ class MyCalculator implements AdvancedArithmetic {
 		return sum;
 	}
 }
+// your codes ends here
+
+
 class Solution{
     public static void main(String []args){
         MyCalculator my_calculator = new MyCalculator();
@@ -46,4 +49,23 @@ class Solution{
     }
 }
 
+/**
+ * 
+ * 
+
+//Solution starts
+class MyCalculator implements AdvancedArithmetic {
+ public int divisor_sum(int n) {
+  int ans = 0;
+  for (int i = 1; i <= n; i++) {
+   if (n % i == 0) ans += i;
+  }
+  return ans;
+ }
+}
+//Solution ends
+
+ * 
+ * 
+ */
 
