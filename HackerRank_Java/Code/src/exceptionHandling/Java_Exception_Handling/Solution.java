@@ -24,13 +24,19 @@ public class Solution {
 		} catch (InputMismatchException e) {
 			System.out.println(e.getClass().getName());
 			System.out.println("java.util.InputMismatchException");
+		    System.out.println(e.getClass().toString().replaceFirst("class ", ""));
+
 
 		} catch (Exception e) {
 			System.out.println(e.toString());
 			System.out.println(e);
 		} finally {
+			System.out.println("final block");
 			sc.close();
 		}
+		
+		System.out.println("out side try catch");
+
 	}
 	
 	
