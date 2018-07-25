@@ -7,8 +7,10 @@ import java.text.*;
 import java.math.*;
 import java.util.regex.*;
 
+
 // write your code
 class Add {
+	
 	public void add(int... num) {
 		int sum = 0;
 		for (int i = 0; i < num.length - 1; i++) {
@@ -18,6 +20,7 @@ class Add {
 		System.out.print(num[num.length - 1] + "=");
 		sum += num[num.length - 1];
 		System.out.println(sum);
+		
 
 	}
 }
