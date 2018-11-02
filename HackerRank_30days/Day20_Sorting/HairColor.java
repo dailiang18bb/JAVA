@@ -1,0 +1,3 @@
+public enum HairColor{
+	BLONDE,BROWN,BLACK,RED,ORANGE,OTHER
+}
