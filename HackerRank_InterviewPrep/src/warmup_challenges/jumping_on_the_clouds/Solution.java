@@ -1,5 +1,4 @@
 package warmup_challenges.jumping_on_the_clouds;
-
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -12,26 +11,33 @@ public class Solution {
 
     // Complete the jumpingOnClouds function below.
     static int jumpingOnClouds(int[] c) {
+        // int result = 0;
+        // for(int i = 0; i<c.length;i++){
+        //     if(i+2 >= c.length || c[i+2] == 1){
+        //         result++;
+        //     } else{
+        //         i+=1;
+        //         result++;
+        //     }
+        // }
+        // return result-1;
+
         int result = 0;
-        for(int i = 0; i<c.length;i++){
-            if(i == c.length-1){
-                return result;
-            } else if(i+2<=c.length-1 && c[i+2] == 0){
+        int i = 0;
+        while(i<c.length){
+            if(i+2 >= c.length|| c[i+2] == 1){
                 i+=1;
                 result++;
-            } else if(c[i+1] == 0){
-                result++;
-            } else{
-                i+=1;
+            }else{
+                i+=2;
                 result++;
             }
         }
-        return result;
+        return result-1;
     }
-
-    
     
     //
+
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
@@ -60,4 +66,3 @@ public class Solution {
         scanner.close();
     }
 }
-
