@@ -1,5 +1,6 @@
 # Hacker Rank practice
-## Interview Preparation Kit
+## Interview Preparation Kit, Solved(2/*)
+
 
 
 
