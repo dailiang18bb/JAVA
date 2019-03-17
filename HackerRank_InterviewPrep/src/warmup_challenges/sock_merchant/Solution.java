@@ -12,14 +12,24 @@ public class Solution {
 
     // Complete the sockMerchant function below.
     static int sockMerchant(int n, int[] ar) {
-        Arrays.sort(ar);
+//        Arrays.sort(ar);
+//        int result = 0;
+//        Stack<Integer> myStack = new Stack<>();
+//        for(int i =0; i<n;i++){
+//            if(myStack.empty() || myStack.peek() != ar[i]){
+//                myStack.push(ar[i]);
+//            }else if(myStack.peek() == ar[i]){
+//                myStack.pop();
+//                result++;
+//            }
+//        }
+//        return result; 
+        
         int result = 0;
-        Stack<Integer> myStack = new Stack<>();
-        for(int i =0; i<n;i++){
-            if(myStack.empty() || myStack.peek() != ar[i]){
-                myStack.push(ar[i]);
-            }else if(myStack.peek() == ar[i]){
-                myStack.pop();
+        Set<Integer> myHashSet = new HashSet<>();
+        for(Integer x : ar){
+            if(!myHashSet.add(x)){
+                myHashSet.remove(x);
                 result++;
             }
         }
