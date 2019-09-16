@@ -1,4 +1,5 @@
 package warmup_challenges.repeated_string;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -9,6 +10,7 @@ import java.util.regex.*;
 
 public class Solution {
 
+	
     // Complete the repeatedString function below.
     static long repeatedString(String s, long n) {
         if(s.length() == 1 && s.equals("a")){
@@ -34,8 +36,10 @@ public class Solution {
         }
     }
     
+    
     //
 
+    
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) throws IOException {
